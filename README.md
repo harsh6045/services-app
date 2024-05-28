@@ -12,9 +12,9 @@ This Flutter application allows users to book various services such as carpentry
 
 ## Screenshots
 
-![Service Booking](![WhatsApp Image 2024-05-28 at 11 57 59 PM(1)](https://github.com/harsh6045/services-app/assets/137603920/9a08f461-a648-43c7-9422-386de11a4c35)
+(![WhatsApp Image 2024-05-28 at 11 57 59 PM(1)](https://github.com/harsh6045/services-app/assets/137603920/9a08f461-a648-43c7-9422-386de11a4c35)
 )
-![Service Details](![WhatsApp Image 2024-05-28 at 11 57 59 PM](https://github.com/harsh6045/services-app/assets/137603920/0e687b75-083c-4244-9722-9ad6c02f955b)
+(![WhatsApp Image 2024-05-28 at 11 57 59 PM](https://github.com/harsh6045/services-app/assets/137603920/0e687b75-083c-4244-9722-9ad6c02f955b)
 )
 
 ## Getting Started

@@ -87,6 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   filled: true,
                   fillColor: Color(0xFFB0B1B1),
+                  contentPadding: EdgeInsets.symmetric(vertical: 5)
                 ),
               ),
             ),
@@ -1233,37 +1234,79 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
             Padding(
-              padding: const EdgeInsets.only(top: 20.0,bottom: 20),
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Column(
-                    children: [
-                      Image.asset("assets/Services.png"),
-                      Text("Explore",style: TextStyle(color: Color(0xFF239551),fontSize: 18,fontWeight: FontWeight.w700),),
-                      Text("Choose Preferred Services",style: TextStyle(fontSize: 10),)
-                    ],
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset("assets/Services.png", height: 80),
+                          SizedBox(height: 5),
+                          Text(
+                            "Explore",
+                            style: TextStyle(color: Color(0xFF239551), fontSize: 18, fontWeight: FontWeight.w700),
+                          ),
+                          Text("Choose Preferred Services", style: TextStyle(fontSize: 8), textAlign: TextAlign.center),
+                        ],
+                      ),
+                    ),
                   ),
-
-                  Column(
-                    children: [
-                      Image.asset("assets/Services.png"),
-                      Text("Explore",style: TextStyle(color: Color(0xFF239551),fontSize: 18,fontWeight: FontWeight.w700),),
-                      Text("Choose Preferred Services",style: TextStyle(fontSize: 10),)
-                    ],
+                  SizedBox(width: 15),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset("assets/Services.png", height: 80),
+                          SizedBox(height: 5),
+                          Text(
+                            "Explore",
+                            style: TextStyle(color: Color(0xFF239551), fontSize: 18, fontWeight: FontWeight.w700),
+                          ),
+                          Text("Choose Preferred Services", style: TextStyle(fontSize: 8), textAlign: TextAlign.center),
+                        ],
+                      ),
+                    ),
                   ),
-
-                  Column(
-                    children: [
-                      Image.asset("assets/Services.png"),
-                      Text("Explore",style: TextStyle(color: Color(0xFF239551),fontSize: 18,fontWeight: FontWeight.w700),),
-                      Text("Choose Preferred Services",style: TextStyle(fontSize: 10),)
-                    ],
+                  SizedBox(width: 15),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset("assets/Services.png", height: 80),
+                          SizedBox(height: 5),
+                          Text(
+                            "Explore",
+                            style: TextStyle(color: Color(0xFF239551), fontSize: 18, fontWeight: FontWeight.w700),
+                          ),
+                          Text("Choose Preferred Services", style: TextStyle(fontSize: 8), textAlign: TextAlign.center),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
-            )
+            ),
+
 
 
           ],

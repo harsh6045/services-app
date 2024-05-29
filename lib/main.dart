@@ -42,19 +42,37 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 50.0,bottom: 20,left: 10,right: 10),
+              padding: const EdgeInsets.only(top: 50.0, bottom: 20, left: 10, right: 10),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Icon(Icons.account_circle,size: 40,),
-                  Text("Your At",style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                  ),),
-                  Text("Anna nagar, Chennai-40",style: TextStyle(color: Color(0xFF239551),fontSize: 16,fontWeight: FontWeight.w500),),
+                  Icon(Icons.account_circle, size: 30),
+                  Flexible(
+                    child: FittedBox(
+                      child: Text(
+                        "Your At",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: FittedBox(
+                      child: Text(
+                        "Anna nagar, Chennai-40",
+                        style: TextStyle(
+                          color: Color(0xFF239551),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                  ),
                   Icon(Icons.arrow_drop_down_sharp),
-                  Icon(Icons.circle_notifications_rounded,size: 40,)
+                  Icon(Icons.circle_notifications_rounded, size: 30),
                 ],
               ),
             ),
@@ -649,13 +667,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width/3,
+                      width: MediaQuery.of(context).size.width/2.7,
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.black),
                       ),
                       child: Column(
                         children: [
-                          Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 125,),
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 130,),
+                          ),
                           Row(
                             children: [
                               Padding(
@@ -732,13 +753,16 @@ class _MyHomePageState extends State<MyHomePage> {
         
         
                     Container(
-                      width: MediaQuery.of(context).size.width/3,
+                      width: MediaQuery.of(context).size.width/2.7,
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.black),
                       ),
                       child: Column(
                         children: [
-                          Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 125,),
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 130,),
+                          ),
                           Row(
                             children: [
                               Padding(
@@ -816,188 +840,16 @@ class _MyHomePageState extends State<MyHomePage> {
         
         
                     Container(
-                      width: MediaQuery.of(context).size.width/3,
+                      width: MediaQuery.of(context).size.width/2.7,
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.black),
                       ),
                       child: Column(
                         children: [
-                          Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 125,),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(3.0),
-                                child: Text("FLOOR CLEANING",style: TextStyle(color: Color(0xFF239551),fontWeight: FontWeight.bold,fontSize: 8),),
-                              ),
-                              Spacer(),
-                              Padding(
-                                padding: const EdgeInsets.all(2.0),
-                                child: Text("RATINGS: 4.5/5",style: TextStyle(fontSize: 6),),
-                              )
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 130,),
                           ),
-                          Text("PURCHASED 30 TIMES IN PAST 24 HRS",style: TextStyle(fontSize: 6,fontWeight: FontWeight.bold),),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  width: 30,
-                                  height: 15,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFF239551),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      "\$10",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 8,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Spacer(),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 8.0),
-                                child: StarRating(
-                                  rating: 4,
-                                  starSize: 8,
-                                  color: Colors.yellow,
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 7,),
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                    Container(
-                      width: MediaQuery.of(context).size.width/3,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black),
-                      ),
-                      child: Column(
-                        children: [
-                          Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 125,),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(3.0),
-                                child: Text("FLOOR CLEANING",style: TextStyle(color: Color(0xFF239551),fontWeight: FontWeight.bold,fontSize: 8),),
-                              ),
-                              Spacer(),
-                              Padding(
-                                padding: const EdgeInsets.all(2.0),
-                                child: Text("RATINGS: 4.5/5",style: TextStyle(fontSize: 6),),
-                              )
-                            ],
-                          ),
-                          Text("PURCHASED 30 TIMES IN PAST 24 HRS",style: TextStyle(fontSize: 6,fontWeight: FontWeight.bold),),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  width: 30,
-                                  height: 15,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFF239551),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      "\$10",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 8,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Spacer(),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              StarRating(
-                                rating: 4,
-                                starSize: 8,
-                                color: Colors.yellow,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 8.0),
-                                child: StarRating(
-                                  rating: 4,
-                                  starSize: 8,
-                                  color: Colors.yellow,
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                    SizedBox(width: 7,),
-        
-        
-        
-        
-        
-        
-        
-        
-                    Container(
-                      width: MediaQuery.of(context).size.width/3,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black),
-                      ),
-                      child: Column(
-                        children: [
-                          Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 125,),
                           Row(
                             children: [
                               Padding(
@@ -1078,15 +930,199 @@ class _MyHomePageState extends State<MyHomePage> {
         
         
         
-        
                     Container(
-                      width: MediaQuery.of(context).size.width/3,
+                      width: MediaQuery.of(context).size.width/2.7,
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.black),
                       ),
                       child: Column(
                         children: [
-                          Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 125,),
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 130,),
+                          ),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(3.0),
+                                child: Text("FLOOR CLEANING",style: TextStyle(color: Color(0xFF239551),fontWeight: FontWeight.bold,fontSize: 8),),
+                              ),
+                              Spacer(),
+                              Padding(
+                                padding: const EdgeInsets.all(2.0),
+                                child: Text("RATINGS: 4.5/5",style: TextStyle(fontSize: 6),),
+                              )
+                            ],
+                          ),
+                          Text("PURCHASED 30 TIMES IN PAST 24 HRS",style: TextStyle(fontSize: 6,fontWeight: FontWeight.bold),),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  width: 30,
+                                  height: 15,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF239551),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "\$10",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 8,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Spacer(),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 8.0),
+                                child: StarRating(
+                                  rating: 4,
+                                  starSize: 8,
+                                  color: Colors.yellow,
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 7,),
+        
+        
+        
+        
+        
+        
+        
+        
+                    Container(
+                      width: MediaQuery.of(context).size.width/2.7,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black),
+                      ),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 130,),
+                          ),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(3.0),
+                                child: Text("FLOOR CLEANING",style: TextStyle(color: Color(0xFF239551),fontWeight: FontWeight.bold,fontSize: 8),),
+                              ),
+                              Spacer(),
+                              Padding(
+                                padding: const EdgeInsets.all(2.0),
+                                child: Text("RATINGS: 4.5/5",style: TextStyle(fontSize: 6),),
+                              )
+                            ],
+                          ),
+                          Text("PURCHASED 30 TIMES IN PAST 24 HRS",style: TextStyle(fontSize: 6,fontWeight: FontWeight.bold),),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  width: 30,
+                                  height: 15,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF239551),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "\$10",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 8,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Spacer(),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              StarRating(
+                                rating: 4,
+                                starSize: 8,
+                                color: Colors.yellow,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 8.0),
+                                child: StarRating(
+                                  rating: 4,
+                                  starSize: 8,
+                                  color: Colors.yellow,
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 7,),
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    Container(
+                      width: MediaQuery.of(context).size.width/2.7,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black),
+                      ),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Image.asset("assets/Group 1000005951(1).png",fit: BoxFit.contain,width: 130,),
+                          ),
                           Row(
                             children: [
                               Padding(
